@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{daveas2020gas}
+S.~Daveas, K.~Karantias, A.~Kiayias, and D.~Zindros.
+\newblock A gas-efficient superlight bitcoin client in solidity.
+\newblock In {\em Proceedings of the 2nd ACM Conference on Advances in
+  Financial Technologies}, 2020.
+
+\bibitem{ml}
+A.~Jain, D.~Das, and A.~Saxena.
+\newblock Planit: A crowdsourcing approach for learning to plan paths from
+  large scale preference feedback.
+\newblock {\em Tech Report, ICRA}, in press.
+
+\end{thebibliography}

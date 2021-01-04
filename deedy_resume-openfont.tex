@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Stelios}{Daveas}{ \urlstyle{same}
+\href{mailto:sdaveas@gmail.com}{sdaveas@gmail.com} | +30 697 913 9967 |
+\href{https://www.github.com/sdaevas}{github.com/sdaveas} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Athens}
+\descript{M.S in Computer Science}
+\location{2017-present | Athens, GR}
+\sectionsep
+
+\subsection{University of Athens}
+\descript{B.S in Computer Science}
+\location{2010-2016 | Athens, GR}
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Expert}
+C/C++ \textbullet{}
+Python \textbullet{}
+Solidity \\
+
+\location{Advanced}
+Java \textbullet{}
+LUA \textbullet{}
+Bash \textbullet{}
+\LaTeX\ \\
+
+\location{Intermediate}
+Rust \textbullet{}
+Matlab \\
+\sectionsep
+
+\subsection{Concepts}
+OOP \textbullet{}
+Data-Oriented Programming \\
+Parallel Programming \textbullet{}
+Network Programming \textbullet{}
+Smart Contracts \\
+\sectionsep
+
+\subsection{Databases}
+PostgreSQL \textbullet{}
+MySQL \textbullet{}
+MariaDB \\
+MongoDB \\
+\sectionsep
+
+\subsection{Environments}
+Linux \textbullet{}
+Git \textbullet{}
+Vim \textbullet{}
+Tmux \textbullet{}
+Docker \\
+\sectionsep
+
+\subsection{Languages}
+English (\textbf{B2}) \textbullet{}
+German (\textbf{B1}) \\
+Greek (\textbf{native})
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{NCSR Demokritos}
+\descript{| Software Engineering }
+\location{2016 – present | Athens, GR}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \textbf{Head engineer} at \textbf{\href{https://ui.adsabs.harvard.edu/abs/2016SPIE.9842E..0QK/abstract}{in-house simulation engine}}, used in \textbf{5+ H2020 European projects}.
+\item Advanced status from TRL 5 to \textbf{TRL 7}, contributed \textbf{48K LOC} of
+    high-performance code at a 300K LOC codebase, performed maintenance,
+    migrated from
+C++03 to \textbf{C++17} standards.
+\item \textbf{Code review} on GitLab.
+\item Incorporated open source projects \textbf{\href{https://github.com/ocornut/imgui}{ImGui}} and \textbf{\href{https://github.com/recastnavigation/recastnavigation}{Recast}}.
+\item \textbf{LUA} scripting and implementation of bindings for C++.
+\item Design of system architecture.
+\item Cooperation with a \textbf{10-member team} in daily basis.
+\item Communication with \textbf{end users} to define requirements.
+\item Conducted \textbf{10+ interviews}.
+\item Build \textbf{containerized} services.
+\item Administration of Linux servers.
+\end {tightemize}
+\sectionsep
+
+\runsubsection{University of Athens}
+\descript{| Software Engineering }
+\location{2019 – 2020 | Athens, GR}
+\begin{tightemize}
+\item Implementation of gas-efficient smart contracts in \textbf{Solidity},
+    profiling and auditing.
+\item Implementation of development and testing environment for smart contracts
+    in \textbf{Python} using
+    \textbf{\href{https://web3py.readthedocs.io/en/stable/}{Web3}} interface.
+\item \textbf{Test driven} development.
+\item Daily stand-ups using \textbf{Slack}.
+\end {tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{University of Athens}
+\descript{| Postgraduate Student}
+\location{2020 | Athens, GR}
+Worked with
+\textbf{Kostis Karantias},
+\textbf{Prof. Aggelos Kiayias} and \textbf{Dr. Dionysis Zindros} to create the
+first gas-efficient superlight client smart contract based on the
+\href{https://www.nipopows.com}{NIPoPoW} protocol.
+
+\runsubsection{NCSR Demokritos}
+\descript{| Researcher}
+\location{2019 | Athens, GR}
+Worked with
+\textbf{Giorgos Bouritsas},
+\textbf{Dr. Antonios Danelakis} and \textbf{Dr. Stelios Thomopoulos} to create
+and architecture that leverages the detection of anomalous human trajectories
+using a Sequence-to-Sequence architecture.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+
+\underline{Daveas S.}, Karantias K., Kiayias A. \& Zindros D.: \href{https://dl.acm.org/doi/abs/10.1145/3419614.3423255?casa_token=NmylSoSMSJgAAAAA:yOyuE4bgCLLp8HQP0MHzGegNr6IVBofjx77nBAiDxN6WzWIzarMpyMD14UMf5Wki-guZkenxekT2qw}{A Gas-Efficient
+Superlight Bitcoin Client in Solidity, ACM AFT 2020}
+
+Bouritsas G., \underline{Daveas S.} Danelakis A. and Thomopoulos S.:
+\href{https://ieeexplore.ieee.org/abstract/document/8909844/?casa_token=NlZHO6W9_ewAAAAA:2Q2vSiR0ynu72R9iaYASHe5FzuNVAtfDrmnj0VmEk1sBZ-P74vnzKELd71hpL59byzko7acsjf5Nlw}{
+Automated Real-time Anomaly Detection in Human Trajectories using Sequence to
+Sequence Networks},
+IEEE AVSS 2019
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
